@@ -1,0 +1,94 @@
+#registerForm {
+    display: flex;
+    width: 100%;
+    padding: 0px 130px;
+}
+
+#registerForm .fillForm {
+    width: 35%;
+}
+
+#registerForm .regInfo {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    color: #626A67;
+}
+
+#registerForm .regInfo .regInfoLabel {
+    width: 30%;
+}
+
+#registerForm .regInfo .regInfoInput {
+    width: 60%;
+}
+
+#registerForm .regInfo .regInfoInput input {
+    width: 100%;
+}
+
+#registerForm .validCheck {
+    width: 30%;
+    margin-top: 20px;
+    color: #626A67;
+}
+
+.buttonReg{
+    margin-top: 20px;
+    width: 100%;
+}
+.buttonReg button{
+    
+    width: 30%;
+    margin-left: 150px;
+}
+.buttonReg button:hover{
+    color: orange;
+    letter-spacing: 1px;
+}
+
+
+#passwordValidCheck, #usernameValidCheck {
+    display: none;
+    background: #f1f1f1;
+    padding: 0px 20px;
+}
+
+#passwordValidCheck #pPwCheck, #pUsernameCheck {
+    font-weight: bold;
+
+}
+
+#passwordValidCheck #letter, #capital, #length, #number, #exist, #specialChar, #userLength{
+    font-size: small;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    
+    left: -35px;
+    content: "✔ ";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    
+    left: -35px;
+    content: "✖ ";
+  }
+
+  .none
+  {
+    color: #626A67;
+  }

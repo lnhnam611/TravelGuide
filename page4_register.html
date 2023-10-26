@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style_Nam.css">
+    <link rel="stylesheet" href="css/style_photoGallery_Nam.css">
+    <link rel="stylesheet" href="css/style_food_Nam.css">
+    <link rel="stylesheet" href="css/style_register_Nam.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <!-- Header of the web -->
+
+        <div id="header">
+
+            <!-- Logo of the web -->
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+
+            <!-- Menu of the web -->
+            <div id="menu">
+                <div class="item">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="item">
+                    <a href="page2_destination.html">Destination</a>
+                </div>
+                <div class="item">
+                    <a href="page3_food.html">Food</a>
+                </div>
+
+            </div>
+
+            <!-- login section of the web -->
+
+            <div id="login">
+                <div id="welcomeUser">Log in</div>
+
+                <div class="username">
+
+                    <div class="label">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input">
+                        <input id="username" type="text" placeholder="username">
+                    </div>
+
+                </div>
+
+                <div class="password">
+
+                    <div class="label">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input">
+                        <input id="password" type="password" placeholder="password" value="">
+                    </div>
+
+                </div>
+                <div id="login_action">
+                    <div class="action">
+                        <div class="forgetPass"> <a id="a_forget">Forgot your password?</a></div>
+                        <div class="register"> <a id="a_register" href="page4_register.html" target="_blank">Register an
+                                account</a></div>
+                    </div>
+                    <div class="btnAction">
+                        <div class="login_button">
+                            <button id="btnLogin">Login</button>
+                        </div>
+                        <div class="logout_button">
+                            <button id="btnLogout">Sign out</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Cover of the web -->
+
+        <div id="banner">
+            <div class="box-left">
+                <h2>
+                    <span>VIET NAM</span>
+                    <br>
+                    <span>TRAVEL GUIDE</span>
+                </h2>
+                <p>Hello, fellow travelers and adventurers! I am a proud Vietnamese,
+                    driven by an insatiable desire to introduce the beauty and wonder
+                    of my homeland to the world. I also offer some tours
+                    press the contact button below if you need a tourguide.</p>
+                
+            </div>
+            <div class="box-right">
+                <img src="images/img_11.jpg" alt="">
+                <img src="images/img_22.jpg" alt="">
+                <img src="images/img_33.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- content of the web -->
+
+        <h2> Registeration form</h2>
+
+        <div id="registerForm">
+            <div class="fillForm">
+                <div class="regInfo">
+                    <div class="regInfoLabel">
+                        <label for="regUsername">Username: </label>
+                    </div>
+                    <div class="regInfoInput">
+                        <input id="regUsername" type="text" placeholder="username" pattern="[a-zA-Z][a-zA-Z0-9-_]{4,24}"
+                            title="The username should only consist of alphanumeric characters, length 4-24 characters, start with a letter."
+                            required>
+                    </div>
+
+                </div>
+                <div class="regInfo">
+                    <div class="regInfoLabel">
+                        <label for="regPass">Password: </label>
+                    </div>
+                    <div class="regInfoInput">
+                        <input id="regPass" type="password" placeholder="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                    </div>
+
+                </div>
+                <div class="regInfo">
+                    <div class="regInfoLabel">
+                        <label for="regSecretKey">SecretKey: </label>
+                    </div>
+                    <div class="regInfoInput">
+                        <input id="regSecretKey" type="password" placeholder="secret key">
+                    </div>
+
+                </div>
+                
+                    <div class="buttonReg">
+                        <button id="btnRegister">Register</button>
+                    </div>
+                
+            </div>
+
+            <div class="validCheck">
+                <div id="usernameValidCheck">
+                    <p id="pUsernameCheck">Uername must follow rules::
+                    <p>
+                    <p id="exist" class="valid">Does not exist in system.</p>
+                    <p id="specialChar" class="invalid">Does not contain special letters. </p>
+
+                    <p id="userLength" class="invalid">From 6-12 characters</b></p>
+                </div>
+                <div id="passwordValidCheck">
+                    <p id="pPwCheck">Password must contain the following:
+                    <p>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </div>
+            <div class="infoTable">
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- Footer of the web -->
+
+        <div id="footer">
+            <div class="boxLogo">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" style="width: 100%;">
+                </div>
+                <p>Let's travel Vietnam together!</p>
+            </div>
+            <div class="boxContact">
+                <h3>Contact</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        Nam Travel Community
+                    </div>
+                    <div class="item">
+                        Address: <a class="contactInfo" href="https://goo.gl/maps/2grPcV3ds7usCxVV6" target="_blank">
+                            700 Royal Ave, New Westminster, BC V3M 5Z5</a>
+                    </div>
+                    <div class="item">
+                        Phone no: <a class="contactInfo" href="tel:7788958650" target="_blank">+1 (778) 895 8650</a>
+                    </div>
+                    <div class="item">
+                        Email: <a class="contactInfo" href="mailto:len37@student.douglascollege.ca" target="_blank">len37@student.douglascollege.ca</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="boxSubs">
+                <h3>Subsribe for our newsletter</h3>
+                <form >
+                    <input type="text" id="inputEmail" placeholder="Email address">
+                    <button id="btnSubscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="./scripts/script_login_Nam.js"></script>
+    <script src="./scripts/script_register_Nam.js"></script>
+    <script src="/scripts/subscribe_Nam.js"></script>
+
+</body>
+
+</html>

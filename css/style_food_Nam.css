@@ -1,0 +1,114 @@
+#foods {
+    padding-top:0px;
+    padding-bottom: 78px;
+    padding-left:134px;
+    padding-right:134px;
+}
+
+#foods h2 {
+    text-align: center;
+    margin-bottom: 76px;
+    font-size:32px;
+    color:#626a67;
+}
+
+
+#list-foods {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#list-foods .item {
+    width: 290px;
+    height: 440px;
+    background:#362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    
+}
+
+#list-foods .item .food_image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    
+    width: 290px;
+    height: 300px;
+}
+#list-foods .item .food_image img {
+    border-radius: 10px;
+    
+}
+
+#list-foods .item .name {
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top:21px;
+    font-size: large;
+}
+
+#list-foods .item .desc {
+    text-align: center;
+    color:#626a67;
+}
+
+#list-foods .item .food_detail {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+#list-foods .item .food_detail a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #1d1a1a;
+    padding: 6px 30px;
+    text-align: center;
+}
+
+#list-foods .item .food_detail a:hover {
+    background-color: orange;
+    letter-spacing: 2px;
+    transition: 0.9s;
+}
+
+
+
+
+.list-page {
+    width: 50%;
+    margin:0px auto;
+}
+
+.list-page {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-page .item {
+    margin:0px 15px;
+    width: 37px;
+    height: 37px;
+    background:#362f2f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-page .item a {
+    color:#fff;
+    text-decoration: none;
+}

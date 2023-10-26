@@ -1,0 +1,36 @@
+#destination #destination_list .item
+{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+}
+
+#destination #destination_list .destination_content
+{
+    width: 60%;
+    margin-right: 30px;
+    padding-left: 30px;
+}
+#destination #destination_list .destination_video
+{
+    width: 40%;
+    
+    padding-right: 30px;
+    vertical-align: middle;
+}
+
+#destination iframe
+{
+    width: 520px;
+    height: 360px;
+    vertical-align: middle;
+}
+
+#destination #destination_list .destination_content h4{
+    margin-left: 20px;
+    text-decoration: underline;
+}
+#destination #destination_list .destination_content p{
+    margin-left: 20px;
+}
