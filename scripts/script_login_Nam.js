@@ -51,6 +51,7 @@ let arrayUser = [
             
           }
         } catch (error) {
+          
         }
       });
       //alert(loggedIn);
